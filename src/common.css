@@ -112,13 +112,7 @@
   background-color: #8b3a25;
 }
 .dc button:hover{
-  opacity: 0.9;
-  transform: scale(1.05);
-  background-color: green;
-}
-  @media (max-width: 600px) {
-      .btn-large {
-        width: 80%;
+  opacity: 0.9; 
         font-size: medium;
       }
     
@@ -152,4 +146,5 @@
         width: 100%;
         height: 100%;
       }
-    }
+     
+/* Add this at the end of your CSS file to ensure the styles are applied correctly */
