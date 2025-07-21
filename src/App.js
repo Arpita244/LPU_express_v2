@@ -16,10 +16,10 @@ function App() {
 
     return isAuthenticated ? element : <Navigate to="/" />;
   };
-
+  // Ensure that the user is authenticated before accessing protected routes
   return (
     <Router>
-      <Routes>
+      <Routes> 
         <Route path="/" element={<LoginForm />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/home" element={<ProtectedRoute element={<Home />} />} />

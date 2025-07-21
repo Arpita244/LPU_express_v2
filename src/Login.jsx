@@ -10,7 +10,7 @@ const LoginForm = () => {
   const [registrationnumber, setRegistrationnumber] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => { // Handle form submission
     try{
     e.preventDefault();
     const data={

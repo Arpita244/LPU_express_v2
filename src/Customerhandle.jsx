@@ -7,7 +7,7 @@ function Checkstatus() {
   const [loading, setLoading] = useState(true);
 
  
-  useEffect(() => {
+  useEffect(() => { // Function to fetch delivery details
     const fetchDeliveryDetails = async () => {
       try {
         const response = await checkdelivery();

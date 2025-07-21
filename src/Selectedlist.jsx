@@ -12,7 +12,7 @@ const handleSubmit=async(regno)=>{
         console.log(response);
 }
 
-  useEffect(() => {
+  useEffect(() => { // Function to fetch delivery list
     const fetchCustomers = async () => {
       try {
         const data = await deliverylist();

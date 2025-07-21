@@ -1,4 +1,4 @@
-const bcrypt= require('bcrypt')
+const bcrypt= require('bcrypt') // Import bcrypt for password hashing
 
 const encryptPassword = async (plainTextPassword) =>{
     try {

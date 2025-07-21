@@ -10,7 +10,7 @@ app.use(exp.json())
 const routes =exp.Router()
 
 app.use('/', routes)
-
+//routes
 routes.post('/signup', Signup)
 routes.post('/login', Login)
 routes.post('/customeradd', Customeradd)

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const {Schema,model}= require('mongoose');
-const { checkPassword, encryptPassword } = require("./passencrypt");
+const { checkPassword, encryptPassword } = require("./passencrypt"); // Assuming passencrypt.js is in the same directory
 require('dotenv').config();
 const mongoUrl = process.env.MONGODB_URL;
 const userSchema = new Schema({

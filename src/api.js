@@ -2,18 +2,18 @@ import axios from "axios"
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const url="https://lpu-express-backend.vercel.app"
+const url="https://lpu-express-backend.vercel.app" 
 
 async function signup(data){
     try{
         console.log(data);
-        const response=await axios.post(url+"/signup",data);
+        const response=await axios.post(url+"/signup",data); 
         console.log('API data:', response.data);
         toast.success('Signup successful! You can now login.')
         return response.data;
     }catch(error){
         if(error.response.status===400){
-            toast.error('User already exists')
+            toast.error('User already exists') // Handle user already exists error
         }
         else{
             alert(error);

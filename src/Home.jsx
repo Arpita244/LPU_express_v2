@@ -7,7 +7,7 @@ function Home(){
   const [img, setImg] = useState('');
   const [ph,setPh] = useState('');
 
-  useEffect(() => {
+  useEffect(() => { // Retrieve user data from localStorage
     const retrievedObject = localStorage.getItem('userData');
     if (retrievedObject) {
       const userData = JSON.parse(retrievedObject);

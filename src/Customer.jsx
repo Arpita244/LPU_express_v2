@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 function Customer() {
   const navigate = useNavigate();
   const [parcelname, setParcelName] = useState('');
-  const [deliverycompany, setDeliveryCompany] = useState('');
+  const [deliverycompany, setDeliveryCompany] = useState(''); // Initialize delivery company state
   const [fare, setFare] = useState('');
   const [location, setLocation] = useState('');
 

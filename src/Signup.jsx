@@ -40,7 +40,7 @@ function Signup() {
         }
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e) => { // Handle form submission
         e.preventDefault();
 
         if (!idcardimg) {

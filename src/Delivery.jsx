@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { cuslist,parcels } from "./api";
 import { ToastContainer } from 'react-toastify';
 
-function DeliveryService() {
+function DeliveryService() { // State to hold customer data
   const [customers, setCustomers] = useState([]);
 
   const parcel=async (val)=>{

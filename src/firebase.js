@@ -1,7 +1,7 @@
 
 import { initializeApp } from 'firebase/app';
 import { getStorage } from 'firebase/storage';
-
+// Ensure that you have the Firebase configuration set up in your environment variables
 
 const firebaseConfig = {
     apiKey:process.env.REACT_APP_FIREBASE_API_KEY,

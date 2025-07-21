@@ -5,7 +5,7 @@ async function Signup(req, res){
     
     const {name,registrationnumber,phonenumber,password,idcardimg} = req.body;
 
-    const user = new User({name,registrationnumber,phonenumber,password,idcardimg});
+    const user = new User({name,registrationnumber,phonenumber,password,idcardimg}); // Create a new user instance
  
     await user.save()
  
